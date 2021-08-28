@@ -1,0 +1,64 @@
+{
+  "name": "getmein",
+  "version": "0.1.0",
+  "license": "MIT",
+  "author": "tony",
+  "description": "Get Me Into Obyte - a demo website using Counterstake SDK in a React app",
+  "keywords": [
+    "cross-chain",
+    "cross-chain bridge",
+    "cross-chain swap",
+    "interoperability",
+    "interchain",
+    "counterstake",
+    "bridge",
+    "swap",
+    "dapp",
+    "Obyte",
+    "DAG",
+    "DLT",
+    "distributed ledger",
+    "crypto",
+    "cryptocurrency"
+  ],
+  "dependencies": {
+    "@ant-design/icons": "^4.6.3",
+    "@craco/craco": "^6.2.0",
+    "@fortawesome/fontawesome-svg-core": "^1.2.36",
+    "@fortawesome/free-brands-svg-icons": "^5.15.4",
+    "@fortawesome/react-fontawesome": "^0.1.15",
+    "antd": "^4.16.13",
+    "counterstake-sdk": "^0.1.0",
+    "cra-template": "1.1.2",
+    "craco-less": "^1.18.0",
+    "ethers": "^5.4.5",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-hook-collapse": "^0.0.13",
+    "react-scripts": "4.0.3"
+  },
+  "scripts": {
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
