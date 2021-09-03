@@ -27,6 +27,17 @@ const allowedPairs = {
   WBTC: ['GBYTE', 'OBITV2', 'WBTC'],
 };
 
+function getQueryParams() {
+  let params = {};
+  const query = window.location.search.substring(1);
+  const pairs = query.split('&');
+  for (let pair of pairs) {
+    const [name, value] = pair.split('=');
+    params[name] = decodeURIComponent(value);
+  }
+  return params;
+}
+
 function App() {
   const [width] = useWindowSize();
   const [amountIn, setAmountIn] = useState(0.1);
@@ -112,10 +123,15 @@ function App() {
 
 
   const handleRecipientChange = (value) => {
-    const valid = obyte.utils.isValidAddress(value);
+    const valid = value === '' ? undefined : obyte.utils.isValidAddress(value);
     setRecipient({ value, valid });
   };
 
+  useEffect(() => {
+    const { recipient } = getQueryParams();
+    if (recipient)
+      handleRecipientChange(recipient)
+  }, []);
 
   const handleClickTransfer = async () => {
     let txid;
