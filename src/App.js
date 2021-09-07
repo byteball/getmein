@@ -178,7 +178,7 @@ function App() {
   return (
     <div className="main_page content">
       <div className="container">
-        <Title level={1} style={{ fontWeight: "bold", fontSize: width < 768 ? (width < 500 ? 46 : 72) : 72, lineHeight: "79px", textAlign: "center", marginBottom: 0, letterSpacing: "-0.05em", marginTop: width < 768 ? 10 : 20 }}>Get Me Into <img src="/obyte-white-transparent-h100.png" style={{ height: 100 }} alt="Obyte logo" /></Title>
+        <Title level={1} style={{ fontWeight: "bold", fontSize: width < 768 ? (width < 500 ? 46 : 72) : 72, lineHeight: "79px", textAlign: "center", marginBottom: 0, letterSpacing: "-0.05em", marginTop: width < 768 ? 10 : 20 }}>Get Me Into <img src="/obyte-white-transparent-h100.png" style={{ height: 100 }} alt="Obyte" /></Title>
         <div style={{ position: "relative" }}>
           <Row style={{ marginTop: 70 }}>
             <Col xs={{ span: 24, offset: 0 }} md={{ span: 11 }}>
