@@ -273,7 +273,7 @@ function App() {
                     <a
                       href="https://obyte.org/#download"
                       target="_blank"
-                      rel="noopener"
+                      rel="noopener noreferrer"
                     >
                       Install Obyte wallet
                     </a> {" "}
@@ -330,10 +330,10 @@ function App() {
       <div style={{ marginTop: 60 }}>
         <SocialIcons centered />
         <div style={{ textAlign: "center", marginTop: 10 }}>
-          Powered by <a href="https://counterstake.org" target="_blank" rel="noopener">Counterstake Bridge</a>
+          Powered by <a href="https://counterstake.org" target="_blank" rel="noopener noreferrer">Counterstake Bridge</a>
         </div>
         <div style={{ textAlign: "center", marginTop: 5, paddingBottom: 20 }}>
-          &copy; <a href="https://obyte.org" target="_blank" rel="noopener" style={{ color: "#fff" }}>Obyte</a>
+          &copy; <a href="https://obyte.org" target="_blank" rel="noopener noreferrer" style={{ color: "#fff" }}>Obyte</a>
         </div>
       </div>
     </div>
