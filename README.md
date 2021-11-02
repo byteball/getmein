@@ -14,5 +14,5 @@ yarn start
 ```
 
 ## Learn
-See the source code of [src/App.js](src/App.js) to learn how to use Counterstake SDK in your browser apps.
+See the source code of [src/App.js](src/App.js) to learn how to use Counterstake SDK in your browser apps. Switch to [demo branch](https://github.com/byteball/getmein/tree/demo) as it is simpler and better demonstrates the use of the SDK.
 
