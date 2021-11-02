@@ -4,9 +4,12 @@ import { ArrowRightOutlined } from "@ant-design/icons";
 import obyte from "obyte";
 import { ethers } from "ethers";
 import { transferEVM2Obyte, estimateOutput, csEvents, errors } from "counterstake-sdk";
+
 import { useWindowSize } from "hooks/useWindowSize";
 import { Transfer } from "components/Transfer/Transfer";
 import { SocialIcons } from "components/SocialIcons/SocialIcons";
+import { getCoinIcon } from "utils/getCoinIcon/getCoinIcon";
+import { getCdnIconList } from "utils/getCoinIcon/getCdnIconList";
 import './App.css';
 
 const { Title, Text } = Typography;
@@ -46,6 +49,7 @@ function App() {
   const [outputCurrency, setOutputCurrency] = useState('GBYTE');
   const [recipient, setRecipient] = useState({});
   const [transfer, setTransfer] = useState({});
+  const [iconListFromCDN, setIconListFromCDN] = useState([]);
 
   const transferRef = useRef(null);
 
@@ -103,6 +107,9 @@ function App() {
     estimate();
   }, [inputCurrency, outputCurrency, amountIn]);
 
+  useEffect(() => {
+    getCdnIconList().then(icons => setIconListFromCDN(icons));
+  }, []);
 
   useEffect(() => {
     console.log('setting claim listener');
@@ -218,7 +225,11 @@ function App() {
                     }}
                     value={inputCurrency}
                   >
-                    {inputCurrencies.map(currency => <Select.Option value={currency} key={currency}>{currency}</Select.Option>)}
+                    {inputCurrencies.map(currency => (<Select.Option value={currency} key={currency}>
+                      <div style={{ display: "flex", alignItems: "center" }}>
+                        <div>{getCoinIcon("Ethereum", currency, iconListFromCDN)}</div> <span>{currency}</span>
+                      </div>
+                    </Select.Option>))}
                   </Select>
                 </Input.Group>
               </Form.Item>
@@ -263,7 +274,11 @@ function App() {
                   value={outputCurrency}
                   optionFilterProp="label"
                 >
-                  {outputCurrencies.map(currency => <Select.Option value={currency} key={currency}>{currency}</Select.Option>)}
+                  {outputCurrencies.map(currency => <Select.Option value={currency} key={currency}>
+                    <div style={{ display: "flex", alignItems: "center" }}>
+                      <div>{getCoinIcon("Obyte", currency, iconListFromCDN)}</div> <span>{currency}</span>
+                    </div>
+                  </Select.Option>)}
                 </Select>
               </Input.Group>
               <Form.Item
