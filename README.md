@@ -5,6 +5,7 @@ This is a quick demo of [Counterstake SDK](https://github.com/byteball/counterst
 Live websites: https://getmein.ooo (mainnet) and https://testnet.getmein.ooo (testnet).
 
 ## Run
+Copy the appropriate .env.XXXX file to .env
 ```sh
 git clone https://github.com/byteball/getmein
 cd getmein
