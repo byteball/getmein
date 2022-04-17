@@ -102,12 +102,12 @@ export const Transfer = (t) => {
         <Row>
           <Col lg={12}>
             <div style={{ paddingLeft: 24, paddingRight: 24, paddingBottom: 24, wordBreak: "break-all" }}>
-              <b>Sent in</b>: <div style={{ fontFamily: "-apple-system, Roboto, Arial, sans-serif" }}><a href={getExplorerLink(src_network, txid)} target="_blank" rel="noopener">{txid}</a></div>
+              <b>Sent in</b>: <div style={{ fontFamily: "-apple-system, Roboto, Arial, sans-serif" }}><a href={getExplorerLink(src_network, txid)} target="_blank" rel="noopener noreferrer">{txid}</a></div>
             </div>
           </Col>
           {claim_txid && <Col lg={12}>
             <div style={{ paddingLeft: 24, paddingRight: 24, paddingBottom: 24, wordBreak: "break-all" }}>
-              <b>Claimed in</b>: <div style={{ fontFamily: "-apple-system, Roboto, Arial, sans-serif" }}><a href={getExplorerLink(dst_network, claim_txid)} target="_blank" rel="noopener">{claim_txid}</a></div>
+              <b>Claimed in</b>: <div style={{ fontFamily: "-apple-system, Roboto, Arial, sans-serif" }}><a href={getExplorerLink(dst_network, claim_txid)} target="_blank" rel="noopener noreferrer">{claim_txid}</a></div>
             </div>
           </Col>}
         </Row>
