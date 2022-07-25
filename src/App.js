@@ -185,8 +185,7 @@ function App() {
   return (
     <div className="main_page content">
       <div className="container">
-        <div style={{ height: 100, textAlign: "center" }}><img src="/obyte-white-transparent-h100.png" style={{ height: 100 }} alt="Obyte logo" /></div>
-        <Title level={1} style={{ fontWeight: "bold", fontSize: width < 768 ? (width < 500 ? 46 : 72) : 72, lineHeight: "79px", textAlign: "center", marginBottom: 0, letterSpacing: "-0.05em", marginTop: width < 768 ? 10 : 20 }}>Get Me Into Obyte</Title>
+        <Title level={1} style={{ fontWeight: "bold", fontSize: width < 768 ? (width < 500 ? 46 : 72) : 72, lineHeight: "79px", textAlign: "center", marginBottom: 0, letterSpacing: "-0.05em", marginTop: width < 768 ? 10 : 20 }}>Get Me Into <img src="/obyte-white-transparent-h100.png" style={{ height: 100 }} alt="Obyte" title="Obyte" /></Title>
         <div style={{ position: "relative" }}>
           <Row style={{ marginTop: 70 }}>
             <Col xs={{ span: 24, offset: 0 }} md={{ span: 11 }}>
@@ -289,7 +288,7 @@ function App() {
                     <a
                       href="https://obyte.org/#download"
                       target="_blank"
-                      rel="noopener"
+                      rel="noopener noreferrer"
                     >
                       Install Obyte wallet
                     </a> {" "}
@@ -346,10 +345,10 @@ function App() {
       <div style={{ marginTop: 60 }}>
         <SocialIcons centered />
         <div style={{ textAlign: "center", marginTop: 10 }}>
-          Powered by <a href="https://counterstake.org" target="_blank" rel="noopener">Counterstake Bridge</a>
+          Powered by <a href="https://counterstake.org" target="_blank" rel="noopener noreferrer">Counterstake Bridge</a>
         </div>
         <div style={{ textAlign: "center", marginTop: 5, paddingBottom: 20 }}>
-          &copy; <a href="https://obyte.org" target="_blank" rel="noopener" style={{ color: "#fff" }}>Obyte</a>
+          &copy; <a href="https://obyte.org" target="_blank" rel="noopener noreferrer" style={{ color: "#fff" }}>Obyte</a>
         </div>
       </div>
     </div>
