@@ -349,7 +349,7 @@ function App() {
           Powered by <a href="https://counterstake.org" target="_blank" rel="noopener">Counterstake Bridge</a>
         </div>
         <div style={{ textAlign: "center", marginTop: 5, paddingBottom: 20 }}>
-          &copy; <a href="https://obyte.org" target="_blank" rel="noopener" style={{ color: "#fff" }}>Obyte</a>
+          <a href="https://obyte.org" target="_blank" rel="noopener" style={{ color: "#fff" }}>Built on Obyte</a>
         </div>
       </div>
     </div>
