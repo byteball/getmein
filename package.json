@@ -23,34 +23,26 @@
   ],
   "dependencies": {
     "@ant-design/icons": "^4.6.3",
-    "@craco/craco": "^6.2.0",
-    "@fortawesome/fontawesome-svg-core": "^1.2.36",
-    "@fortawesome/free-brands-svg-icons": "^5.15.4",
-    "@fortawesome/react-fontawesome": "^0.1.15",
+    "@fortawesome/fontawesome-svg-core": "^7.3.1",
+    "@fortawesome/free-brands-svg-icons": "^7.3.1",
+    "@fortawesome/react-fontawesome": "^3.5.0",
     "antd": "^4.16.13",
     "counterstake-sdk": "^0.1.8",
-    "cra-template": "1.1.2",
-    "craco-less": "^1.18.0",
     "ethers": "^5.4.5",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-hook-collapse": "^0.0.13",
-    "react-scripts": "4.0.3"
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-hook-collapse": "^1.0.1"
+  },
+  "devDependencies": {
+    "@rsbuild/core": "^2.1.10",
+    "@rsbuild/plugin-less": "^2.0.1",
+    "@rsbuild/plugin-node-polyfill": "^1.4.6",
+    "@rsbuild/plugin-react": "^2.1.0",
+    "@rsbuild/plugin-svgr": "^2.0.5"
   },
   "scripts": {
-    "start": "craco start",
-    "build": "craco build",
-    "test": "craco test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ],
-    "rules": {
-      "react/jsx-no-target-blank": "off"
-    }
+    "start": "rsbuild dev",
+    "build": "rsbuild build"
   },
   "browserslist": {
     "production": [
