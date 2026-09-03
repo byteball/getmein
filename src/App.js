@@ -23,11 +23,11 @@ const dst_network = 'Obyte';
 const inputCurrencies = testnet ? ['ETH', 'USDC'] : ['ETH', 'USDC', 'WBTC'];
 const outputCurrencies = testnet
   ? ['GBYTE', 'USDC3', 'OUSD_V2', 'ETH3', 'OETHV2']
-  : ['GBYTE', 'USDC', 'OUSD', 'WBTC', 'OBIT', 'ETH', 'OETH'];
+  : ['GBYTE', 'USDC_2', 'WBTC_2', 'ETH_2'];
 const allowedPairs = {
-  ETH: testnet ? ['GBYTE', 'OETHV2', 'ETH3'] : ['GBYTE', 'OETH', 'ETH'],
-  USDC: testnet ? ['OUSD_V2', 'USDC3'] : ['GBYTE', 'OUSD', 'USDC'],
-  WBTC: testnet ? ['GBYTE', 'OBITV2', 'WBTC'] : ['GBYTE', 'OBIT', 'WBTC'],
+  ETH: testnet ? ['GBYTE', 'OETHV2', 'ETH3'] : ['GBYTE', 'ETH_2'],
+  USDC: testnet ? ['OUSD_V2', 'USDC3'] : ['GBYTE', 'USDC_2'],
+  WBTC: testnet ? ['GBYTE', 'OBITV2', 'WBTC'] : ['GBYTE', 'WBTC_2'],
 };
 
 function getQueryParams() {
